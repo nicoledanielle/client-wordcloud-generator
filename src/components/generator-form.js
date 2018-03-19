@@ -72,29 +72,29 @@ export class GeneratorForm extends React.Component {
 
     if (view === 'cloudEdit') {
       button =
-              <div>
+              <div className>
                 <button type="submit" name="submit" id="regenerateWordCloud" className="button">
-                    Regenerate Word Cloud
+                    Regenerate
                 </button>
                 <button type="button" name="submit" id="deleteWordCloud" className="button" onClick={(e) => this.onDelete(e)}>
-                    Delete Word Cloud
+                    Delete
                 </button>
               </div>
     } else {
       button =
               <div>
                 <button type="submit" name="submit" id="generateWordCloudButton" className="button">
-                Generate Word Cloud
+                Generate
                 </button>
               </div>
     }
 
     return (
-      <form onSubmit={e => this.onSubmit(e)}>
-        <div>
+      <form className="generator-form" onSubmit={e => this.onSubmit(e)}>
+        <div className="generator-title">
           <label htmlFor="textInput">please input text below</label>
         </div>
-        <div>
+        <div className="text-input-div">
           <textarea
           onChange={this.handleInputChange}
           name="textInput"
@@ -105,10 +105,10 @@ export class GeneratorForm extends React.Component {
           ref={(input) => { this.textInput = input; }}>
           </textarea>
         </div>
-        <div>
+        <div className='buttons-div'>
           {button}
         </div>
-        <div>
+        <div className="title-input-div">
           <label htmlFor="cloudTitle">Title:</label>
           <input
           onChange={this.handleInputChange}
@@ -120,7 +120,7 @@ export class GeneratorForm extends React.Component {
           required
           ref={(input) => { this.titleInput = input; }}/>
         </div>
-        <div>
+        <div className="selections-div">
           <label htmlFor="fontColor">Font Color:</label>
           <select onChange={this.handleInputChange} name="fontColor" id="fontColor" size="1" defaultValue={this.props.activeCloud.color}>
             <option value="red">Red</option>

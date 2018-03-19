@@ -17,3 +17,15 @@ ul {
     padding: 5px;
     text-align: center
 }
+
+.home, .library {
+    text-decoration: none;
+    color: rgba(230, 126, 34,1.0);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home:hover, .library:hover {
+    cursor: pointer;
+    color: rgba(230, 126, 34, 0.5);
+}

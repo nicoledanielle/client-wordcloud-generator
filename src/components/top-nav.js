@@ -29,12 +29,12 @@ export function TopNav(props) {
             <ul className="nav">
                 <li className="nav-items">
                     <a href="#home" className="home" onClick={() => props.dispatch(goHome())}>
-                        Home
+                        <i className="fas fa-home" aria-hidden="true"></i> Home
                     </a>
                 </li>
                 <li className="nav-items">
                     <a href="#library" className="library" onClick={() => props.dispatch(fetchClouds())}>
-                        Library
+                        <i className="fas fa-cloud" aria-hidden="true"></i> Library
                     </a>
                 </li>
             </ul>
