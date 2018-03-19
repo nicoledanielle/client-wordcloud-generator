@@ -2,7 +2,7 @@
   "name": "wordcloud-generator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wordcloud-generator.herokuapp.com/api",
+  "homepage": "https://wordcloud-generator.herokuapp.com/",
   "dependencies": {
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
