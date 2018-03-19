@@ -32,6 +32,7 @@ body {
 
 .tag-cloud {
  flex: 1;
+ order: 1;
 }
 
 .tag-cloud > div {
@@ -40,4 +41,63 @@ body {
 
 .edit-form {
   font-family: sans-serif;
+  order: 2;
+  width: 100%;
+}
+
+.edit-form form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#editWordCloud {
+  margin-bottom: 10px;
+  background-color: rgba(230, 126, 34,1.0);
+  border: 0px;
+  color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 5px;
+  width: 200px;
+}
+
+#editWordCloud:hover {
+  cursor: pointer;
+  background-color: rgba(230, 126, 34, 0.5);
+}
+
+.thumbs-down, .thumbs-up {
+  text-decoration: none;
+  color: rgba(230, 126, 34,1.0);
+}
+
+.thumbs-up {
+  margin-right: 5px;
+}
+
+.thumbs-down:hover, .thumbs-up:hover {
+  cursor: pointer;
+  color: rgba(230, 126, 34, 0.5)
+}
+
+.score {
+  font-weight: 700
+}
+
+.buttons-div div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+#regenerateWordCloud {
+  margin-bottom: 5px;
 }

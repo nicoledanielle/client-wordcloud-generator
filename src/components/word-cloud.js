@@ -47,11 +47,11 @@ export class Wordcloud extends React.Component {
                     {this.props.view === 'focus' && <div className="edit-form">
                         <form onSubmit={(event) => this.onSubmit(event)}>
                             <button type="submit" name="submit" id="editWordCloud" className="button">
-                                Edit Word Cloud
+                                Update
                             </button>
                             <div>
-                                <span>{this.props.activeCloud.upvotes}</span> <a onClick={() => this.props.dispatch(upVoteCloud(this.props.activeCloud.id, this.props.activeCloud.upvotes))} href="#thumbsUp" className="thumbs-up"><i className="fa fa-thumbs-up"></i></a>
-                                <span>{this.props.activeCloud.downvotes}</span> <a onClick={() => this.props.dispatch(downVoteCloud(this.props.activeCloud.id, this.props.activeCloud.downvotes))} href="#thumbsDown" className="thumbs-down"><i className="fa fa-thumbs-down"></i></a>
+                                <span className="score">{this.props.activeCloud.upvotes}</span> <a onClick={() => this.props.dispatch(upVoteCloud(this.props.activeCloud.id, this.props.activeCloud.upvotes))} href="#thumbsUp" className="thumbs-up"><i className="fa fa-thumbs-up"></i></a>
+                                <span className="score">{this.props.activeCloud.downvotes}</span> <a onClick={() => this.props.dispatch(downVoteCloud(this.props.activeCloud.id, this.props.activeCloud.downvotes))} href="#thumbsDown" className="thumbs-down"><i className="fa fa-thumbs-down"></i></a>
                             </div>
                         </form>
                      </div>}

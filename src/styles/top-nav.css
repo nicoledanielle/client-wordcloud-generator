@@ -4,7 +4,8 @@ nav-container {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 5em;
+    font-size: 5vw;
     text-align: center
 }
 
@@ -28,4 +29,11 @@ ul {
 .home:hover, .library:hover {
     cursor: pointer;
     color: rgba(230, 126, 34, 0.5);
+}
+
+@media only screen
+and (max-device-width : 768px) { 
+    h1 {
+        font-size: 1.5em;
+    }
 }
