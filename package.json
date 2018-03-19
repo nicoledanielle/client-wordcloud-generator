@@ -2,6 +2,7 @@
   "name": "wordcloud-generator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://wordcloud-generator.herokuapp.com/api",
   "dependencies": {
     "canvas": "^1.6.9",
     "d3": "^4.12.2",
