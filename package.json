@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "https://wordcloud-generator.herokuapp.com/api",
   "dependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "^6.24.1",
     "canvas": "^1.6.9",
     "d3": "^4.12.2",
     "d3-cloud": "^1.2.4",
